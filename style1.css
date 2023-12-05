@@ -1,0 +1,101 @@
+/* RIGHT SIDE OF THE PAGE */
+.right{
+    width: 71%;
+    padding-left: 65px;
+}
+h1{
+    display: inline-block;
+}
+/* aligning footer to the center */
+footer{
+    text-align: center;
+}
+/* adjusting width for the icons for the footer */
+.icon-bar a img{
+    width: 30px;
+}
+/* making hovering effect while hovering to the image url */
+.right .profile img:hover{
+    cursor: pointer;
+}
+.icon-bar{
+    padding: 10px;
+}
+button img{
+    width: 15px;
+}
+/* Adding theme color drak and light */
+:root{
+    --primary-color:skyblue;
+    --secondary-color:#4545ff;
+}
+
+
+.light-mode{
+    --bg-light:#fff;
+    --primary-color:#111;
+}
+.dark-mode{
+    --bg-light:#111;
+    --primary-color:#fff;
+}
+/* button for dark and light theme */
+.toggleBtn{
+    position: fixed;
+    bottom: 30px;
+    right: 45px;
+    width: 70px;
+    height: 80px;
+    cursor: pointer;
+    border: none;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 1px 3px #00000033;
+    z-index: 10;
+}
+
+/* attributes to button like position */
+.toggleBtn img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 72%;
+    height: 72%;
+}
+/* for script */
+.toggleBtndarkMode{background:#222 ;}
+.displayNone{display: none;}
+.displayBlock{display: block;}
+
+/* Changing list style to disc */
+ul{
+    list-style-type: disc;
+}
+
+/* adding media query to the page */
+@media screen and (max-width:800px){
+    .row{
+        width: 100%;
+    }
+    
+} 
+
+/* Button for Downloading Resume */
+/* Adding width height radius background text color shape size face */
+.ButtonD{
+width: 400px;
+height: 40px; 
+border-radius: 12px;
+background: #999999;
+color: black;
+position: relative;
+margin-left: 36%;
+font-weight: 400;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 20px;
+}
+/* Adding hovering Effect for this Button */
+.ButtonD:hover{
+    cursor: pointer;
+}

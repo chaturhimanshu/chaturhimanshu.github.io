@@ -1,0 +1,178 @@
+/* setting background image with parallax Effect  */
+*{
+    box-sizing: border-box;
+    background-image: url("/images/df.jpg");  
+    /* height: 300px; */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:rgb(6, 10, 10);
+    }
+
+html {
+    scroll-behavior: smooth;
+}
+/* Setting the image properties to the required fit */
+.container img{
+    width: 371px;
+}
+.container .content h1{
+    padding-left: 15px;
+}
+/* Making two side by side columns */
+.column{
+    float: left;
+    padding: 5px;
+}
+.left{
+    width: 381px;
+    
+}
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* MAKING THE ROUND SHAPE OF ICONS AND GIVING SPACES */
+.icon img{
+    width: 40px;
+    border-radius: 50%;
+    padding-bottom: 2px;
+}
+
+/* USING DISPLAY PROPERTY TO ARRANGE ICONS AND TEXT IN THE SAME LINE */
+.icon img p{
+    display: inline-block;
+}
+.profile h1 u{
+    display: inline-block;
+}
+
+/* MAKING HOVERING EFFECT AND CHANGING THE CURSOR   */
+#icon img:hover{
+    cursor: pointer;
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    padding-left: 10px;
+}
+h2{
+    display: inline-block;
+    padding-left: 10px;
+}
+/* giving font attributes to skill */
+.skills h2{
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-top: 40px;
+    margin-bottom: 5px;
+    color:black;
+    font-size: 20px;
+}
+/* giving font attributes to language */
+#language h2{
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-top: 40px;
+    margin-bottom: 5px;
+    color:black;
+    font-size: 20px;
+}
+/* Making progress bar. its shape and adding colors */
+.progress-bar{
+    background: #A9A9A9;
+    border-radius: 5px;
+    width: 300px;
+    height: 10px;
+}
+.progress-bar div{
+    border-radius: 5px;
+    width: 50%;
+    height: 10px;
+}
+/* Making the shape for the progress number  */
+.progress-bar div span{
+    height: 40px;
+    height: 40px;
+    border-radius: 12px;
+    background: #778899;
+    float: right;
+    margin-top: -15px;
+    margin-right: -20px;
+    color:#fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* Adding animations for the movement of the bar */
+.html{
+    background: #009688;
+    animation: html 1s linear forwards;
+}
+.javascript{
+    background: #009688;
+    animation: javascript 1s linear forwards;
+}
+.css{
+    background: #009688;
+    animation: css 1s linear forwards;
+}
+.python{
+    background: #009688;
+    animation: python 1s linear forwards;
+}
+.react{
+    background: #009688;
+    animation: react 1s linear forwards;
+}
+/* Adding border to the progess bar number bar  */
+.html span{
+    border: 2px solid #009688;
+}
+.javascript span{
+    border: 2px solid #009688;
+}
+.css span{
+    border: 2px solid #009688;
+}
+.python span{
+    border: 2px solid #009688;
+}
+.react span{
+    border: 2px solid #009688;
+}
+
+/* Giving attributes for how much should each bar go */
+@keyframes html{
+    100%{
+        width: 100%;
+    }
+}
+@keyframes javascript{
+    100%{
+        width: 85%;
+    }
+}
+@keyframes css{
+    100%{
+        width: 90%;
+    }
+}
+@keyframes python{
+    100%{
+        width: 90%;
+    }
+}
+@keyframes react{
+    100%{
+        width: 85%;
+    }
+}
